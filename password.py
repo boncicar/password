@@ -14,10 +14,11 @@ while remaining > 0:
 	if pwd == password:
 		print('登入成功')
 		break
+	elif remaining > 0:
+		print('密碼錯誤! 還有', remaining, '次機會')
 	else:
-		print('密碼錯誤!')
-		if remaining > 0:
-			print('還有', remaining, '次機會')
+		print('密碼錯誤! 已無法登入')
+
 
 
 		
