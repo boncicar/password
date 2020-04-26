@@ -8,7 +8,7 @@
 
 password = '12345'
 remaining = 3
-while True:
+while remaining > 0:
 	pwd = input('請輸入密碼: ')
 	remaining = remaining - 1
 	if pwd == password:
