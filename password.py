@@ -7,13 +7,15 @@
 # 輸入3次錯誤就印出'密碼錯誤! 已無法登入!'
 
 password = '12345'
+remaining = 3
 while True:
 	pwd = input('請輸入密碼: ')
-	remaining = 3
-	remaining = remaining -1
+	remaining = remaining - 1
 	if pwd == password:
 		print('登入成功')
 		break
 	else:
 		print('密碼錯誤! 還有', remaining, '次機會')
+		if remaining == 0:
+			break
 
