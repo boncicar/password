@@ -9,9 +9,11 @@
 password = '12345'
 while True:
 	pwd = input('請輸入密碼: ')
+	remaining = 3
+	remaining = remaining -1
 	if pwd == password:
 		print('登入成功')
 		break
 	else:
-		print('密碼錯誤! 還有__次機會')
+		print('密碼錯誤! 還有', remaining, '次機會')
 
